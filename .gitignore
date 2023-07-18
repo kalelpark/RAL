@@ -1,0 +1,16 @@
+# Byte-compiled / optimized / DLL files
+.vscode
+chkpt
+__pycache__/
+*.py[cod]
+data
+baseline
+wandb
+submit
+temper
+__MACOSX
+fchkpt
+ckpt
+largemit
+folder.py
+loss_metric.py
