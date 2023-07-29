@@ -45,7 +45,9 @@ conda install pytorch==1.13.0 torchvision==0.6.0 libauc==1.3.0 cudatoolkit=10.1 
 ## Supporting papers
 
 (1) Focal Loss for Dense Object Detection  ([Paper](https://arxiv.org/abs/1708.02002v2) / [Code](https://github.com/unsky/focal-loss))
+
 (2) Asymmetric Loss For Multi-Label Classification  ([Paper](https://arxiv.org/abs/2009.14119) / [Code](https://github.com/Alibaba-MIIL/ASL))
+
 (3) Simple and Robust Loss Design for Multi-Label Learning with Missing Labels  ([Paper](https://arxiv.org/abs/2112.07368) / [Code](https://github.com/xinyu1205/robust-loss-mlml))
 
 
