@@ -18,6 +18,6 @@ if __name__ == "__main__":
         train_dl, valid_dl, train_sampler = get_dataloader(args)
         train(args, net, optimizer, criterion, train_dl, valid_dl, train_sampler, 1)
 
-    if args.infer:
-        test_dl, submit_df = get_testloader(args)
-        infer(args, net, test_dl, submit_df)
+    # if args.infer:
+    #     test_dl, submit_df = get_testloader(args)
+    #     infer(args, net, test_dl, submit_df)

@@ -2,6 +2,7 @@ import os
 import random
 import numpy as np
 import torch
+import torch.nn as nn
 from torchmetrics.classification import MultilabelPrecision
 from libauc.metrics import auc_roc_score
 
@@ -42,3 +43,5 @@ def metrics(pred, label):
 def save_model(args, model, idx = None):
     torch.save(model.state_dict(), os.path.join(args.model_path, args.model + f"_{args.img_size}" + args.store_name + ".pt"))
     torch.save(model.module.state_dict(), os.path.join(args.model_path, args.model + f"_{args.img_size}_module(X)_" + args.store_name + ".pt"))
+    
+    

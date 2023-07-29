@@ -13,8 +13,10 @@ def get_model(args):
         model = part_model(args, 26)
     elif args.model == "convout":
         model = convout()
+    elif args.model == "resnet50":
+        model = timm.create_model("resnet50", pretrained = True, num_classes = 26)
     elif args.model == "convnext":
-        model = timm.create_model('convnext_base_384_in22ft1k', pretrained=True, num_classes = 26)
+        model = timm.create_model('convnext_base', pretrained=True, num_classes = 26)
         
     model = torch.nn.SyncBatchNorm.convert_sync_batchnorm(model)
     model.cuda(args.local_rank)

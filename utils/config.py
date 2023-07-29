@@ -15,7 +15,7 @@ def get_args_parser():
     # model
     parser.add_argument("--model", type = str, required = False)
     parser.add_argument("--OPTIMIZER", type = str, default = "Adam", required = False)
-    parser.add_argument("--criterion", type = str, default = "MAS", required = False)
+    parser.add_argument("--criterion", type = str, default = "Ral", required = False)
     parser.add_argument("--batchsize", type = int, default= 256, required = False)
     parser.add_argument("--epochs", type = int, default= 60, required = False)
     parser.add_argument("--lr", type = float, default= 1e-4, required = False)
@@ -42,10 +42,13 @@ def get_args_parser():
     parser.add_argument("--WARMUP_METHOD", type = str, default = "linear", required = False)
     
     # path
-    parser.add_argument("--img_path", type = str, default = "/home/psboys/psboys/384", required = False)
+    parser.add_argument("--img_path", type = str, default = "/home/psboys/psboys/224", required = False)
     parser.add_argument("--model_path", type = str, default = "chkpt", required = False)
     # parser.add_argument("--store_name", type = str, help = "identify Name", default = "xXx", required = True)
     parser.add_argument("--csv_path", type = str, default = "largemit", required = False)
     parser.add_argument("--save_model", type = int, default = 0, required = False)
     
     return parser.parse_args()
+
+
+# 

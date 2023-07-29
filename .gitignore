@@ -14,3 +14,6 @@ ckpt
 largemit
 folder.py
 loss_metric.py
+cam.*
+check.*
+temp.py

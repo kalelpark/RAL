@@ -27,6 +27,7 @@ def train(args, model, optimizer, loss_fn, train_dl, valid_dl, train_sampler, nu
             scaler.scale(loss).backward()
             scaler.step(optimizer)
             scaler.update()
+            # print("hello")
             torch.cuda.synchronize()
         # scheduler.step()
         

@@ -1,6 +1,6 @@
-## Margin Asymmetric Loss for Multi-Label Long-Tailed Learning
+## Robust Asymmetric Loss for Multi-Label Long-Tailed Learning
 
-> Margin Asymmetric Loss for Multi-Label Long-Tailed Learning<br/>
+> Robust Asymmetric Loss for Multi-Label Long-Tailed Learning<br/>
 > [Wongi Park](https://www.linkedin.com/in/wongipark/), [Inhyuk Park](https://sites.google.com/view/jongbinryu/about-me?authuser=0), [Sungeun Kim](https://sites.google.com/view/jongbinryu/about-me?authuser=0), [Jongbin Ryu](https://sites.google.com/view/jongbinryu/about-me?authuser=0).<br/> 
 > (Comming soon..), <br/>
 
@@ -10,11 +10,11 @@
 
 ```
 # Create Environment
-conda create -n mass python=3.8
-conda activate mass
+conda create -n ral python=3.8
+conda activate ral
 
 # Install pytorch, torchvision, cudatoolkit
-conda install pytorch==1.13.0 torchvision==0.6.0 cudatoolkit=10.1 (10.2) -c pytorch
+conda install pytorch==1.13.0 torchvision==0.6.0 libauc==1.3.0 cudatoolkit=10.1 (10.2) -c pytorch
 ```
 
 <a id="dataset"></a>
@@ -25,7 +25,6 @@ conda install pytorch==1.13.0 torchvision==0.6.0 cudatoolkit=10.1 (10.2) -c pyto
 1. MIMIC-CXR 2.0 : [MIMIC-CXR 2.0](https://physionet.org/content/mimic-cxr/2.0.0/)
 2. APTOS 2019 Blindness : [APTOS2019](https://www.kaggle.com/c/aptos2019-blindness-detection)
 3. ISIC2018 Challenge :  [ISIC2018](https://challenge.isic-archive.com/)
-4. PasCal Visual Challenge :  [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/)
 
 - **Directory structure of our project**
 ```
@@ -34,10 +33,10 @@ conda install pytorch==1.13.0 torchvision==0.6.0 cudatoolkit=10.1 (10.2) -c pyto
   - main.py               : Main Execution (Args, Setting)
   - dataset               : Augmentation, DataLoader
       - ...
-  - train.py               : training,
+  - train.py               : training, validation
   - predict.py             : inference   
       - ...
-  - utils                 : Metrics
+  - utils                 : Distribution Setting, Metrics
       - ...
 ```
 
@@ -45,7 +44,7 @@ conda install pytorch==1.13.0 torchvision==0.6.0 cudatoolkit=10.1 (10.2) -c pyto
 
 (1) Focal Loss for Dense Object Detection  ([Paper](https://arxiv.org/abs/1708.02002v2) / [Code](https://github.com/unsky/focal-loss))
 (2) Asymmetric Loss For Multi-Label Classification  ([Paper](https://arxiv.org/abs/2009.14119) / [Code](https://github.com/Alibaba-MIIL/ASL))
-(3) Focal Loss for Dense Object Detection  ([Paper](https://arxiv.org/abs/1708.02002v2) / [Code](https://github.com/unsky/focal-loss))
+(3) Simple and Robust Loss Design for Multi-Label Learning with Missing Labels  ([Paper](https://arxiv.org/abs/2112.07368) / [Code](https://github.com/xinyu1205/robust-loss-mlml))
 
 
 ## Training & Inference
@@ -65,10 +64,10 @@ The results will be automatically saved in ./workspace/[model name]/[Workspace N
 ## How to cite
 ```
 @article = {
-    title = {Margin Asymmetric Loss for Multi-Label Long-Tailed Learning},
+    title = {Robust Asymmetric Loss for Multi-Label Long-Tailed Learning},
     author = {Wongi Park, Inhyuk Park, Sungeun Kim, Jongbin Ryu},
     Paper = {...},
-    url = {https://github.com/kalelpark/Royal-Loss},
+    url = {https://github.com/kalelpark/RAL},
     year = {2023},
 }
 ```
