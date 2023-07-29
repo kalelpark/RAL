@@ -4,6 +4,8 @@
 > [Wongi Park](https://www.linkedin.com/in/wongipark/), [Inhyuk Park](https://sites.google.com/view/jongbinryu/about-me?authuser=0), [Sungeun Kim](https://sites.google.com/view/jongbinryu/about-me?authuser=0), [Jongbin Ryu](https://sites.google.com/view/jongbinryu/about-me?authuser=0).<br/> 
 > (Comming soon..), <br/>
 
+![model overview](Ral.png)
+
 ## Environment Setting
 - **Conda environment**
 : Ubuntu 18.04 CUDA-10.1 (10.2) with Pytorch==1.13.0, Torchvision==0.6.0 (python 3.8), libauc, torchmetrices==0.8.0.<br/>
