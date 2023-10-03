@@ -2,7 +2,7 @@
 
 > Robust Asymmetric Loss for Multi-Label Long-Tailed Learning<br/>
 > [Wongi Park](https://www.linkedin.com/in/wongipark/), [Inhyuk Park](https://sites.google.com/view/jongbinryu/about-me?authuser=0), [Sungeun Kim](https://sites.google.com/view/jongbinryu/about-me?authuser=0), [Jongbin Ryu](https://sites.google.com/view/jongbinryu/about-me?authuser=0).<br/> 
-> (CVAMD workshop at International Conference on Computer Vision (ICCV), 2023 ), <br/>
+> (CVAMD workshop at International Conference on Computer Vision (ICCVW), 2023 ), <br/>
 
 ![model overview](Ral.png)
 
